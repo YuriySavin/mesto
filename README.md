@@ -8,3 +8,5 @@
 На других рарешениях также отображается корректно.
 
 В разработке использовались технологии html, css и javascript.
+
+Ссылка на проект - https://yuriysavin.github.io/mesto/index.html
