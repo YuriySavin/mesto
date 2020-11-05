@@ -9,75 +9,74 @@
 <body class="body">
   <div class="page">
     <header class="header">
-      <img src="./images/header-logo.svg" alt="Логотип" class="header__logo">
-      <hr class="header__align"/>  
+      <img src="./images/header-logo.svg" alt="Логотип" class="header__logo">  
     </header>
-    <section class="content">
+    <main class="content">
       <div class="profile">
         <img src="./images/image.jpg" alt="Аватар пользователя" class="profile__avatar">
         <div class="profile-info">
           <h1 class="profile-info__title">Жак-Ив Кусто</h1>
-          <button class="profile-info__edit-button"></button>
+          <button class="profile-info__edit-button" type="button"></button>
           <h2 class="profile-info__subtitle">Исследователь океана</h2>
         </div>
-        <button class="profile__add-button"></button>
+        <button class="profile__add-button" type="button"></button>
       </div>
       <div class="elements">
         <div class="element">
-          <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">;
+          <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">
           <div class="element-title-box">
             <h3 class="element-title-box__title">Карачаевск</h3>
-            <button class="element-title-box__heart-button"></button>
+            <button class="element-title-box__heart-button" type="button"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">;
+          <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Вид на гору на закате" class="element__image">
           <div class="element-title-box">
             <h3 class="element-title-box__title">Гора Эльбрус</h3>
-            <button class="element-title-box__heart-button"></button>
+            <button class="element-title-box__heart-button" type="button"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">;
+          <img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Вид на заснеженную гору" class="element__image">
           <div class="element-title-box">
             <h3 class="element-title-box__title">Домбай</h3>
-            <button class="element-title-box__heart-button"></button>
+            <button class="element-title-box__heart-button" type="button"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">;
+          <img src="./images/kirill-pershin-1404681-unsplash.jpg" alt="Вид на гору на закате" class="element__image">
           <div class="element-title-box">
             <h3 class="element-title-box__title">Гора Эльбрус</h3>
-            <button class="element-title-box__heart-button"></button>
+            <button class="element-title-box__heart-button" type="button"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">;
+          <img src="./images/kirill-pershin-1556355-unsplash.jpg" alt="Вид на заснеженную гору" class="element__image">
           <div class="element-title-box">
             <h3 class="element-title-box__title">Домбай</h3>
-            <button class="element-title-box__heart-button"></button>
+            <button class="element-title-box__heart-button" type="button"></button>
           </div>
         </div>
         <div class="element">
-          <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">;
+          <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Вид на разрушенный храм" class="element__image">
           <div class="element-title-box">
             <h3 class="element-title-box__title">Карачаево-Черкессия</h3>
-            <button class="element-title-box__heart-button"></button>
+            <button class="element-title-box__heart-button" type="button"></button>
           </div>
         </div>
         
       </div>
-    </section>
-    <section class="footer">
+    </main>
+    <footer class="footer">
       <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
-    </section>
+    </footer>
     <div class="popup">
       <div class="popup__content">
-        <button class="popup__close"></button>
+        <button class="popup__close" type="button"></button>
         <h3 class="popup__title">Редактировать профиль</h3>
-        <form class="popup__form">
-          <input type="text" class="popup__input popup__input_type_name">
-          <input type="text" class="popup__input popup__input_type_title">
+        <form class="popup__form" name="popup-form">
+          <input type="text" class="popup__input popup__input_type_name" name="username">
+          <input type="text" class="popup__input popup__input_type_title" name="userjob">
           <button type="submit" class="popup__submit">Сохранить</button>
         </form>
       </div>

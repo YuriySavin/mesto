@@ -12,7 +12,6 @@
     .profile{
     flex-direction: column;
     width: 282px;
-    height: 286px;
     justify-content: space-between;
 }
 }
