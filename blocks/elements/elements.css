@@ -14,3 +14,6 @@
         
 }
 }
+.elements:last-child{
+    justify-content: start;
+}
