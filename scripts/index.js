@@ -44,9 +44,24 @@ const initialCards = [
 
 
 
-function showPopup(somePopup){
+function showPopup(somePopup) {
     somePopup.classList.add('popup_opened');
+    document.addEventListener('keydown', escClose);
+    somePopup.addEventListener('click', (evt) => {
+        if (!somePopup.querySelector(".popup__content").contains(evt.target)) {
+            closePopup(somePopup)
+        }
+
+    })
 }
+
+function escClose (evt){
+    if (evt.keyCode === 27) {
+        closePopup(document.querySelector('.popup_opened'));
+        document.removeEventListener('keydown', escClose);
+    }
+}
+
 
 
 function closePopup(somePopup){
@@ -79,6 +94,7 @@ popupImageCloseButton.addEventListener('click', () => closePopup(popupImage));
 popupForm.addEventListener('submit', submitForm);
 popupAddCard.addEventListener('submit', prependCard);
 addButton.addEventListener('click', () => showPopup(popupAddCard));
+
 
 function createCard (initialCards) {
     const card = document.querySelector(".card-template").content.cloneNode(true);
@@ -117,5 +133,7 @@ function prependCard(evt) {
     elements.prepend(cardElement);
     popupAddCard.classList.remove('popup_opened');
     popupFormAddCard.reset();
+    popupAddCard.querySelector(".popup__submit").classList.add('popup__submit_invalid');
+
 }
 
